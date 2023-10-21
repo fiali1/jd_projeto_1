@@ -11,22 +11,18 @@ public class Rankings : MonoBehaviour
 
     void LoadRankings() 
     {
+        // Generate sample rankings list
         for (int i = 0; i < 10; i++) 
         {
             Ranking newRanking = new("ABC", 100 * (i + 1));
             rankingsList.Add(newRanking);
         }
-
-        print(rankingsList.Count);
     }
 
-    void RenderList() {
-        print(rankingsList.Count);
-
-
-
+    void RenderRankingsList() {
         for (int i = 0; i < rankingsList.Count; i++)
         {
+            // Instantiate and setup each rank components set via a prefab
             GameObject rankingContainer = Instantiate(rankingPrefab, transform);
 
             TextMeshProUGUI rankingPosition = rankingContainer.transform.Find("Position").GetComponent<TextMeshProUGUI>();
@@ -41,8 +37,8 @@ public class Rankings : MonoBehaviour
             rankingName.text = rankingsList[i].name;
             rankingPoints.text = rankingsList[i].points.ToString();
 
+            // Setup ranking component positioning
             float yPosition = (float)(transform.position.y - (i * 25));
-
             rankingContainer.transform.position = new Vector3(
                 0,
                 yPosition,
@@ -55,7 +51,7 @@ public class Rankings : MonoBehaviour
     void Start()
     {
         LoadRankings();
-        RenderList();
+        RenderRankingsList();
         
     }
 
