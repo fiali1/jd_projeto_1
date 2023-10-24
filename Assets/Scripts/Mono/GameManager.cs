@@ -272,10 +272,25 @@ public class GameManager : MonoBehaviour {
     void LoadQuestions()
     {
         Object[] objs = Resources.LoadAll("Questions", typeof(Question));
-        _questions = new Question[objs.Length];
-        for (int i = 0; i < objs.Length; i++)
+        int halfLength = objs.Length / 2;
+        if (halfLength > 0)
         {
-            _questions[i] = (Question)objs[i];
+            _questions = new Question[halfLength];
+            List<int> randomIndices = new List<int>();
+            for (int i = 0; i < halfLength; i++)
+            {
+                int randomIndex;
+                do
+                {
+                    randomIndex = Random.Range(0, objs.Length);
+                } while (randomIndices.Contains(randomIndex));
+                randomIndices.Add(randomIndex);
+                _questions[i] = (Question)objs[randomIndex];
+            }
+        }
+        else
+        {
+            Debug.LogError("A quantidade de questões é menor que a metade da quantidade total de questões.");
         }
     }
 
