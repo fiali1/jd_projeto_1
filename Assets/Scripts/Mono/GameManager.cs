@@ -272,27 +272,50 @@ public class GameManager : MonoBehaviour {
     void LoadQuestions()
     {
         Object[] objs = Resources.LoadAll("Questions", typeof(Question));
-        int halfLength = objs.Length / 2;
-        if (halfLength > 0)
+        List<Question> selectedQuestions = new List<Question>();
+        List<int> randomIndices = new List<int>();
+
+        // selecionando questões do 1 até 26
+        for (int i = 0; i < 10; i++)
         {
-            _questions = new Question[halfLength];
-            List<int> randomIndices = new List<int>();
-            for (int i = 0; i < halfLength; i++)
+            int randomIndex;
+            do
             {
-                int randomIndex;
-                do
-                {
-                    randomIndex = Random.Range(0, objs.Length);
-                } while (randomIndices.Contains(randomIndex));
-                randomIndices.Add(randomIndex);
-                _questions[i] = (Question)objs[randomIndex];
-            }
+                randomIndex = Random.Range(0, 26);
+            } while (randomIndices.Contains(randomIndex));
+            randomIndices.Add(randomIndex);
+            selectedQuestions.Add((Question)objs[randomIndex]);
         }
-        else
+
+        // selecionando questões do 27 até 49
+        randomIndices.Clear();
+        for (int i = 0; i < 10; i++)
         {
-            Debug.LogError("A quantidade de questões é menor que a metade da quantidade total de questões.");
+            int randomIndex;
+            do
+            {
+                randomIndex = Random.Range(26, 50);
+            } while (randomIndices.Contains(randomIndex));
+            randomIndices.Add(randomIndex);
+            selectedQuestions.Add((Question)objs[randomIndex]);
         }
+
+        // selecionando questões do 50 até 60
+        randomIndices.Clear();
+        for (int i = 0; i < 5; i++)
+        {
+            int randomIndex;
+            do
+            {
+                randomIndex = Random.Range(50, objs.Length);
+            } while (randomIndices.Contains(randomIndex));
+            randomIndices.Add(randomIndex);
+            selectedQuestions.Add((Question)objs[randomIndex]);
+        }
+
+        _questions = selectedQuestions.ToArray();
     }
+
 
     /// <summary>
     /// Function that is called restart the game.

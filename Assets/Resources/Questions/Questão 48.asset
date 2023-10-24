@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
+  m_Name: "Quest\xE3o 48"
+  m_EditorClassIdentifier: 
+  _info: Qual cuidado deve ser tomado antes de enviar um material para a reciclagem?
+  _answers:
+  - _info: "Cort\xE1-lo em peda\xE7os menores"
+    _isCorrect: 0
+  - _info: "Coloc\xE1-lo numa sacola"
+    _isCorrect: 0
+  - _info: "Mistur\xE1-lo com materiais do mesmo g\xEAnero"
+    _isCorrect: 0
+  - _info: "Limp\xE1-lo\r\n"
+    _isCorrect: 1
+  _useTimer: 1
+  _timer: 30
+  _answerType: 1
+  _addScore: 30

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
+  m_Name: "Quest\xE3o 49"
+  m_EditorClassIdentifier: 
+  _info: "Assinale a alternativa que aponta corretamente os objetos que N\xC3O podem
+    ser\r reciclados."
+  _answers:
+  - _info: "Embalagem de salgadinho (pl\xE1stico); papel celofane; prato Duralex
+      (vidro);\r\n esponja de a\xE7o."
+    _isCorrect: 1
+  - _info: Garrafa PET; papel sulfite; cacos de vidro; lata de refrigerante.
+    _isCorrect: 0
+  - _info: "Papel\xE3o; frasco de perfume; papel alum\xEDnio."
+    _isCorrect: 0
+  - _info: "Embalagem de xampu; jornal; copo de requeij\xE3o (vidro); lacre."
+    _isCorrect: 0
+  _useTimer: 1
+  _timer: 30
+  _answerType: 1
+  _addScore: 30
