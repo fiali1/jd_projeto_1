@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class RankingList
@@ -35,19 +37,32 @@ public class Rankings : MonoBehaviour
 
     void RenderRankingsList() {
         if (rankingsList.Count == 0) 
-        {            
-            TextMeshProUGUI emptyMessage = gameObject.AddComponent<TextMeshProUGUI>();
+        {
+            GameObject textContainer = new()
+            {
+                name = "TextContainer",
+            };
 
-            emptyMessage.text = "Ainda não há placares disponíveis";
+            textContainer.transform.parent = transform;
+
+            // Generate sprite from texture and apply it to a container image
+            UnityEngine.UI.Image containerImage = gameObject.AddComponent<UnityEngine.UI.Image>();
+            Texture2D texture2D = Resources.Load("Textura Botao") as Texture2D;
+            Sprite sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), Vector2.one * 0.5f);
+            containerImage.sprite = sprite;
+
+            // Generate info message for the player
+            TextMeshProUGUI emptyMessage = textContainer.AddComponent<TextMeshProUGUI>();
+            emptyMessage.text = "Ainda não há placares disponíveis!";
             emptyMessage.fontSize = 20;
             emptyMessage.font = Resources.Load("HVD Fonts  MikadoRegular SDF") as TMP_FontAsset;
+            emptyMessage.color = new Color32(79, 48, 0, 255);
             emptyMessage.alignment = TextAlignmentOptions.Top;
-
-            emptyMessage.transform.position = new Vector3(
-                0,
-                transform.position.y - 25,
-                transform.position.z
-            );
+            
+            // Setup message alignement and positioning
+            VerticalLayoutGroup layout = gameObject.GetComponent<VerticalLayoutGroup>();
+            layout.childAlignment = TextAnchor.MiddleCenter;
+            emptyMessage.transform.position = transform.position;
 
             return;
         }
@@ -69,32 +84,14 @@ public class Rankings : MonoBehaviour
             rankingName.text = rankingsList[i].name;
             rankingPoints.text = rankingsList[i].points.ToString();
 
-            if (i == 0) 
+            if (i <= 2) 
             {
-                Color32 firstPlaceColor = new (241, 255, 74, 255);
-                rankingPosition.color = rankingName.color = rankingPoints.color = firstPlaceColor;
                 rankingPosition.fontStyle = rankingName.fontStyle = rankingPoints.fontStyle = FontStyles.Bold;
             }
-
-            else if (i == 1) 
-            {
-                Color32 secondPlaceColor = new (237, 237, 237, 255);
-                rankingPosition.color = rankingName.color = rankingPoints.color = secondPlaceColor;
-                rankingPosition.fontStyle = rankingName.fontStyle = rankingPoints.fontStyle = FontStyles.Bold;
-            }
-
-            else if (i == 2)
-            {
-                Color32 thirdPlaceColor = new (207, 177, 70, 255);
-                rankingPosition.color = rankingName.color = rankingPoints.color = thirdPlaceColor;
-                rankingPosition.fontStyle = rankingName.fontStyle = rankingPoints.fontStyle = FontStyles.Bold;
-            }
-
-            else 
-            {
-                 Color32 inRankingsColor = new (255, 187, 232, 255);
-                rankingPosition.color = rankingName.color = rankingPoints.color = inRankingsColor;
-            }
+            
+            Color32 inRankingsColor = new (79, 48, 0, 255);
+            rankingPosition.color = rankingName.color = rankingPoints.color = inRankingsColor;
+    
 
             // Setup ranking component positioning
             float yPosition = (float)(transform.position.y - (i * 25));
