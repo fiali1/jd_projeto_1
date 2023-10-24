@@ -306,7 +306,8 @@ public class GameManager : MonoBehaviour {
     /// </summary>
     public void QuitGame()
     {
-        Application.Quit();
+        Destroy(GameObject.Find("AudioManager"));
+        SceneManager.LoadScene("Menu Principal");
     }
 
     /// <summary>
