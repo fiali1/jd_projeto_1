@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 59"
   m_EditorClassIdentifier: 
-  _info: "Os ve\xEDculos automotores (carros, caminh\xF5es, \xF4nibus) contribuem
-    em grande parte para\r a polui\xE7\xE3o do ar, atrav\xE9s da libera\xE7\xE3o
-    de um g\xE1s, resultante da queima de combust\xEDveis\r\n f\xF3sseis. Que subst\xE2ncia
-    \xE9 esta?"
+  _info: "Os ve\xEDculos automotores contribuem em grande parte para a polui\xE7\xE3o
+    do ar, atrav\xE9s da libera\xE7\xE3o de um g\xE1s, resultante da queima de combus\xEDveis
+    f\xF3sseis. Que subst\xE2ncia \xE9 esta?"
   _answers:
   - _info: "Oxig\xEAnio"
     _isCorrect: 0

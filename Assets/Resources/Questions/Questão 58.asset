@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 58"
   m_EditorClassIdentifier: 
-  _info: "Al\xE9m de \xE1gua, de qual g\xE1s as plantas precisam para realizar a
-    fotoss\xEDntese?"
+  _info: "Al\xE9m de \xE1gua, de qual g\xE1s as plantas precisam para realizar a fotoss\xEDntese?"
   _answers:
   - _info: "Di\xF3xido de carbono"
     _isCorrect: 1

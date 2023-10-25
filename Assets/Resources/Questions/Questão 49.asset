@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 49"
   m_EditorClassIdentifier: 
   _info: "Assinale a alternativa que aponta corretamente os objetos que N\xC3O podem
-    ser\r reciclados."
+    ser reciclados."
   _answers:
   - _info: "Embalagem de salgadinho (pl\xE1stico); papel celofane; prato Duralex
       (vidro);\r\n esponja de a\xE7o."

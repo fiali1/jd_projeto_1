@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 8"
   m_EditorClassIdentifier: 
   _info: "A teoria dos 3 R\u2019s \xE9 um conjunto de a\xE7\xF5es fundamentais de
-    preserva\xE7\xE3o do meio\r ambiente. Qual dos itens abaixo n\xE3o faz parte
-    dos 3 R\u2019s?"
+    preserva\xE7\xE3o do meio ambiente. Qual dos itens abaixo n\xE3o faz parte dos
+    3 R\u2019s?"
   _answers:
   - _info: Reduzir
     _isCorrect: 0

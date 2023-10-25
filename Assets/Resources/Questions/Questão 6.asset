@@ -20,9 +20,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: "Org\xE2nico"
     _isCorrect: 1
-  - _info: 'Pilhas e Baterias
-
-'
+  - _info: 'Pilhas e Baterias'
     _isCorrect: 0
   _useTimer: 1
   _timer: 30
