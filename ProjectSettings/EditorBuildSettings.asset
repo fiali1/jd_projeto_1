@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/TelaInicial.unity
+    guid: 8a845086ab807114a850120002040e05
+  - enabled: 1
+    path: Assets/Scenes/Rankings.unity
+    guid: 7dd4ed419415fbb4f961f5b18ff78aca
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 47905db7df0ed4447a61f712399ddb3d
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 9aa1f0c02d0cd4f41978cfec98a330e1
   m_configObjects: {}
