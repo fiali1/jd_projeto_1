@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 39"
   m_EditorClassIdentifier: 
-  _info: "Em qual regi\xE3o do Brasil a produ\xE7\xE3o de energia e\xF3lica \xE9
-    predominante?"
+  _info: "Em qual regi\xE3o do Brasil a produ\xE7\xE3o de energia e\xF3lica \xE9 predominante?"
   _answers:
   - _info: Sul
     _isCorrect: 0

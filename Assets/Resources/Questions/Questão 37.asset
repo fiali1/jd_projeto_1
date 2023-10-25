@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 37"
   m_EditorClassIdentifier: 
   _info: "Como se chama o processo realizado pelas plantas para a produ\xE7\xE3o
-    de energia\r necess\xE1ria para a sua sobreviv\xEAncia?"
+    de energia necess\xE1ria para a sua sobreviv\xEAncia?"
   _answers:
   - _info: "Fot\xF3lise"
     _isCorrect: 0

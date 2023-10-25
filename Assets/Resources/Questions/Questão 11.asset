@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 11"
   m_EditorClassIdentifier: 
   _info: "Ao fazer compras em um supermercado, qual \xE9 a op\xE7\xE3o considerada
-    mais sustent\xE1vel\r na hora de levar os produtos?"
+    mais sustent\xE1vel na hora de levar os produtos?"
   _answers:
   - _info: "Sacolas reutiliz\xE1veis"
     _isCorrect: 1

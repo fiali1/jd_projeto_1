@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 21"
   m_EditorClassIdentifier: 
   _info: "Como \xE9 conhecido o \xF4nibus movido \xE0 energia el\xE9trica que possui
-    hastes conectadas \xE0\r fia\xE7\xE3o el\xE9trica?"
+    hastes conectadas \xE0 fia\xE7\xE3o el\xE9trica?"
   _answers:
   - _info: "\xF4nibus el\xE9trico"
     _isCorrect: 0

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 34"
   m_EditorClassIdentifier: 
-  _info: "Qual o principal produto gerado atrav\xE9s da reciclagem do \xF3leo de
-    cozinha usado?"
+  _info: "Qual o principal produto gerado atrav\xE9s da reciclagem do \xF3leo de cozinha usado?"
   _answers:
   - _info: Gordura Vegetal Hidrogenada
     _isCorrect: 0

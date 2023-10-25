@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 19"
   m_EditorClassIdentifier: 
-  _info: "Qual destas N\xC2O \xE9 uma atitude consciente quanto \xE0 economia de
-    \xE1gua?"
+  _info: "Qual destas N\xC2O \xE9 uma atitude consciente quanto \xE0 economia de \xE1gua?"
   _answers:
   - _info: "Fechar as torneiras ap\xF3s seu uso"
     _isCorrect: 0

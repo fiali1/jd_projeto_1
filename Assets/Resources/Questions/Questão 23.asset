@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 23"
   m_EditorClassIdentifier: 
   _info: "Qual tipo de alimentos a sua produ\xE7\xE3o est\xE1 mais alinhada \xE0s
-    pr\xE1ticas de\r sustentabilidade?"
+    pr\xE1ticas de sustentabilidade?"
   _answers:
   - _info: Alimentos ultraprocessados
     _isCorrect: 0

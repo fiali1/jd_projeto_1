@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 57"
   m_EditorClassIdentifier: 
-  _info: "As sacolas pl\xE1sticas de supermercado s\xE3o fabricadas com qual tipo
-    de pl\xE1stico?"
+  _info: "As sacolas pl\xE1sticas de supermercado s\xE3o fabricadas com qual tipo de pl\xE1stico?"
   _answers:
   - _info: PEAD
     _isCorrect: 0

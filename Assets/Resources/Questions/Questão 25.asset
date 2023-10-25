@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 25"
   m_EditorClassIdentifier: 
   _info: "Como \xE9 denominado o sistema ambiental caracterizado pelo conjunto de
-    rela\xE7\xF5es\r estabelecidas entre uma comunidade e o meio ambiente?"
+    rela\xE7\xF5es estabelecidas entre uma comunidade e o meio ambiente?"
   _answers:
   - _info: "Popula\xE7\xE3o"
     _isCorrect: 0

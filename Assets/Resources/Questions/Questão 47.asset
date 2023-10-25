@@ -18,8 +18,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: "Produtos que se decomp\xF5em facilmente, compostos por material org\xE2nico"
     _isCorrect: 1
-  - _info: "Produtos feitos por meio de processo artesanal, que n\xE3o agride o meio
-      ambiente"
+  - _info: "Produtos feitos por meio de processo artesanal, que n\xE3o agride o meio ambiente"
     _isCorrect: 0
   - _info: "Produtos feitos a partir de combust\xEDveis f\xF3sseis"
     _isCorrect: 0

@@ -20,9 +20,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: "acr\xEDlico"
     _isCorrect: 0
-  - _info: 'cabo de panela
-
-'
+  - _info: 'cabo de panela'
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

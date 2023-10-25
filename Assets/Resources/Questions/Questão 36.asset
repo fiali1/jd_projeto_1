@@ -20,9 +20,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: Cartolina
     _isCorrect: 0
-  - _info: 'Papel Sulfite
-
-'
+  - _info: 'Papel Sulfite'
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

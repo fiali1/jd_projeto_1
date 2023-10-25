@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 18"
   m_EditorClassIdentifier: 
-  _info: "Dentre os combust\xEDveis utilizados em ve\xEDculos, qual deles \xE9 o
-    menos poluente?"
+  _info: "Dentre os combust\xEDveis utilizados em ve\xEDculos, qual deles \xE9 o menos poluente?"
   _answers:
   - _info: Gasolina
     _isCorrect: 0

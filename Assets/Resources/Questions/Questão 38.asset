@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Quest\xE3o 38"
   m_EditorClassIdentifier: 
   _info: "Quais destes tipos de produ\xE7\xE3o de energia el\xE9trica \xE9 considerada
-    limpa, ou seja, n\xE3o\r polui o meio ambiente?"
+    limpa, ou seja, n\xE3o polui o meio ambiente?"
   _answers:
   - _info: "hidrel\xE9trica"
     _isCorrect: 0
