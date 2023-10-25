@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
+  m_Name: "Quest\xE3o 46"
+  m_EditorClassIdentifier: 
+  _info: "O termo sustentabilidade emerge das discuss\xF5es sobre a necessidade de
+    preserva\xE7\xE3o\r do meio ambiente. Neste sentido, ele est\xE1 atrelado \xE0/ao:"
+  _answers:
+  - _info: "delimita\xE7\xE3o de pequenas zonas indicadas para a preserva\xE7\xE3o
+      do espa\xE7o natural"
+    _isCorrect: 0
+  - _info: "rela\xE7\xE3o entre preserva\xE7\xE3o ambiental e preda\xE7\xE3o desenfreada
+      dos recursos naturais"
+    _isCorrect: 0
+  - _info: "equil\xEDbrio entre a preserva\xE7\xE3o ambiental e o suprimento das
+      necessidades\r\n humanas"
+    _isCorrect: 1
+  - _info: "demarca\xE7\xE3o de h\xE1bitos sociais considerados insatisfat\xF3rios
+      para o meio ambiente"
+    _isCorrect: 0
+  _useTimer: 1
+  _timer: 30
+  _answerType: 1
+  _addScore: 30
