@@ -100,9 +100,17 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
+    public bool IsPlaying(string name) 
+    {
+        var sound = GetSound(name);
+
+        return sound != null && sound.Source.isPlaying; 
+    }
+
     /// <summary>
     /// Function that is called to play a sound.
     /// </summary>
+    ///
     public void PlaySound(string name)
     {
         var sound = GetSound(name);
