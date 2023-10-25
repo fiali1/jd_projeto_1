@@ -11,8 +11,9 @@ public class TelaInicial : MonoBehaviour
     public void TelaJogo(){
         if (preencheuNome) {
             preencheuNome = false;
-            SceneManager.LoadScene("Game");
             PlayerPrefs.SetString("PlayerName", input);
+            Destroy(GameObject.Find("AudioManager"));
+            SceneManager.LoadScene("Game");
         }
         else {
             print("Falta preencher o nome");
@@ -20,6 +21,7 @@ public class TelaInicial : MonoBehaviour
     }
 
     public void TelaCreditos(){
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().StopSound("GameMusic");
         SceneManager.LoadScene("Creditos");
     }
 
@@ -36,13 +38,20 @@ public class TelaInicial : MonoBehaviour
     public void ReadStringInput(string s){
         preencheuNome = true;
         input = s;
-        Debug.Log(input);
     }
     
+    void Awake() {
+        AudioManager audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        
+        if (!audioManager.IsPlaying("GameMusic")) 
+        {
+            audioManager.PlaySound("GameMusic");
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
