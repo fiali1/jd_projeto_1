@@ -15,13 +15,13 @@ MonoBehaviour:
   _info: "Quais destes tipos de produ\xE7\xE3o de energia el\xE9trica \xE9 considerada
     limpa, ou seja, n\xE3o polui o meio ambiente?"
   _answers:
-  - _info: "hidrel\xE9trica"
+  - _info: "Hidrel\xE9trica"
     _isCorrect: 0
-  - _info: "e\xF3lica"
+  - _info: "E\xF3lica"
     _isCorrect: 1
-  - _info: "termoel\xE9trica"
+  - _info: "Termoel\xE9trica"
     _isCorrect: 0
-  - _info: termonuclear
+  - _info: Termonuclear
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

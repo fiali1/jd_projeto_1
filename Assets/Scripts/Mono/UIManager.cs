@@ -147,6 +147,11 @@ public class UIManager : MonoBehaviour {
         uIElements.MainCanvasGroup.blocksRaycasts = true;
     }
 
+    void CheckHighscore() 
+    {
+        
+    }
+
     /// <summary>
     /// Function that is used to display resolution UI information.
     /// </summary>

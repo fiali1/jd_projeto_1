@@ -20,7 +20,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: Garrafas
     _isCorrect: 0
-  - _info: "l\xE2mpadas"
+  - _info: "L\xE2mpadas"
     _isCorrect: 1
   _useTimer: 1
   _timer: 30

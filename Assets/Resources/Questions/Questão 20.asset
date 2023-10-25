@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "O que \xE9 biodiversidade?"
   _answers:
-  - _info: "\xC9 a introdu\xE7\xE3o de esp\xE9cies animais e vegetais em ecossistemas diferentes."
+  - _info: "\xC9 a introdu\xE7\xE3o de esp\xE9cies animais e vegetais em ecossistemas
+      diferentes."
     _isCorrect: 0
   - _info: "\xC9 a diversidade de alimentos que o ser humano possui \xE0 sua disposi\xE7\xE3o."
-    _isCorrect: 1
+    _isCorrect: 0
   - _info: O uso indiscriminado dos recursos naturais.
     _isCorrect: 0
   - _info: "\xC9 a riqueza e variedade do mundo natural.\r\n"
-    _isCorrect: 0
+    _isCorrect: 1
   _useTimer: 1
   _timer: 30
   _answerType: 1

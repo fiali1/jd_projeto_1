@@ -15,16 +15,16 @@ MonoBehaviour:
   _info: "O termo sustentabilidade emerge das discuss\xF5es sobre a necessidade de
     preserva\xE7\xE3o do meio ambiente. Neste sentido, ele est\xE1 atrelado \xE0/ao:"
   _answers:
-  - _info: "delimita\xE7\xE3o de pequenas zonas indicadas para a preserva\xE7\xE3o
+  - _info: "Delimita\xE7\xE3o de pequenas zonas indicadas para a preserva\xE7\xE3o
       do espa\xE7o natural"
     _isCorrect: 0
-  - _info: "rela\xE7\xE3o entre preserva\xE7\xE3o ambiental e preda\xE7\xE3o desenfreada
+  - _info: "Rela\xE7\xE3o entre preserva\xE7\xE3o ambiental e preda\xE7\xE3o desenfreada
       dos recursos naturais"
     _isCorrect: 0
-  - _info: "equil\xEDbrio entre a preserva\xE7\xE3o ambiental e o suprimento das
-      necessidades\r\n humanas"
+  - _info: "Equil\xEDbrio entre a preserva\xE7\xE3o ambiental e o suprimento das
+      necessidades humanas"
     _isCorrect: 1
-  - _info: "demarca\xE7\xE3o de h\xE1bitos sociais considerados insatisfat\xF3rios
+  - _info: "Demarca\xE7\xE3o de h\xE1bitos sociais considerados insatisfat\xF3rios
       para o meio ambiente"
     _isCorrect: 0
   _useTimer: 1

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Com que tipo de lixo podemos realizar a compostagem?
   _answers:
-  - _info: lixo espacial
+  - _info: Lixo espacial
     _isCorrect: 0
-  - _info: lixo hospitalar
+  - _info: Lixo hospitalar
     _isCorrect: 0
-  - _info: "pl\xE1stico"
+  - _info: "Pl\xE1stico"
     _isCorrect: 0
-  - _info: "lixo org\xE2nico"
+  - _info: "Lixo org\xE2nico"
     _isCorrect: 1
   _useTimer: 1
   _timer: 30
