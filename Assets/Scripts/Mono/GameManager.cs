@@ -343,8 +343,9 @@ public class GameManager : MonoBehaviour {
         int pontuacao = events.CurrentFinalScore;
         var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
         
-        List<Ranking> rankingsList = new ();/*
+        List<Ranking> rankingsList = new ();
         
+        // Check if rankings file exist
         if (File.Exists("playerRankings.json")) {
             string rankingsJsonData = File.ReadAllText("playerRankings.json");
             RankingList storedRankings = JsonUtility.FromJson<RankingList>(rankingsJsonData);
@@ -354,20 +355,33 @@ public class GameManager : MonoBehaviour {
             {
                 rankingsList.Add(ranking);
             }
-            Ranking newranking = new (playername, pontuacao);
-            rankingsList.Add(newranking);
-            rankingsList = rankingsList.OrderByDescending(item => item.points).ToList();
-            rankingsList = rankingsList.Take(10);
+            
+        } 
+
+        // Attach match points to the list, sort and take 10
+        Ranking newRanking = new (playername, pontuacao);
+        rankingsList.Add(newRanking);
+        rankingsList = rankingsList.OrderByDescending(item => item.points).ToList();
+        rankingsList = rankingsList.Take(10).ToList();
+
+
+        // Update highscore check with values from list
+        if (highscore < rankingsList[0].points) {
+            highscore = rankingsList[0].points;
         }
-*/
 
-
-        /*
+        // Override rankings file with new data
+        RankingList updatedRankingList = new()
+        {
+            rankings = rankingsList
+        };
+        string updatedRankingsJsonData = JsonUtility.ToJson(updatedRankingList);
+        File.WriteAllText("playerRankings.json", updatedRankingsJsonData);
 
         if (highscore < events.CurrentFinalScore)
         {
             PlayerPrefs.SetInt(GameUtility.SavePrefKey, events.CurrentFinalScore);
-        }*/
+        }
     }
     /// <summary>
     /// Function that is called update the score and update the UI.
