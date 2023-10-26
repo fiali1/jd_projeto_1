@@ -164,7 +164,7 @@ public class UIManager : MonoBehaviour {
             case ResolutionScreenType.Incorrect:
                 uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
                 uIElements.ResolutionStateInfoText.text = "ERROU!";
-                uIElements.ResolutionScoreText.text = "-" + score;
+                uIElements.ResolutionScoreText.text = "-" + 15;
                 break;
             case ResolutionScreenType.Finish:
                 uIElements.ResolutionBG.color = parameters.FinalBGColor;
