@@ -16,7 +16,7 @@ MonoBehaviour:
     ser reciclados."
   _answers:
   - _info: "Embalagem de salgadinho (pl\xE1stico); papel celofane; prato Duralex
-      (vidro);\r\n esponja de a\xE7o."
+      (vidro); esponja de a\xE7o."
     _isCorrect: 1
   - _info: Garrafa PET; papel sulfite; cacos de vidro; lata de refrigerante.
     _isCorrect: 0

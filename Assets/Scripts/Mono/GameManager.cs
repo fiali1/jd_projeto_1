@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using Unity.VisualScripting;
 
 
 public class GameManager : MonoBehaviour {
@@ -43,6 +44,22 @@ public class GameManager : MonoBehaviour {
 
     #region Default Unity methods
 
+    private void LoadStartScore()
+    {
+        if (File.Exists("playerRankings.json")) {
+            string rankingsJsonData = File.ReadAllText("playerRankings.json");
+            RankingList storedRankings = JsonUtility.FromJson<RankingList>(rankingsJsonData);
+
+            List<Ranking> rankingsList = storedRankings.rankings;
+
+            events.StartupHighscore = 
+                (rankingsList.Count > 0) ? 
+                    rankingsList[0].points : 
+                    events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+            
+        } 
+    } 
+
     /// <summary>
     /// Function that is called when the object becomes enabled and active
     /// </summary>
@@ -70,7 +87,7 @@ public class GameManager : MonoBehaviour {
     /// </summary>
     void Start()
     {
-        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+        LoadStartScore();
 
         timerDefaultColor = timerText.color;
         LoadQuestions();
@@ -341,7 +358,6 @@ public class GameManager : MonoBehaviour {
     {
         string playername = PlayerPrefs.GetString("PlayerName");
         int pontuacao = events.CurrentFinalScore;
-        var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
         
         List<Ranking> rankingsList = new ();
         
@@ -365,11 +381,6 @@ public class GameManager : MonoBehaviour {
         rankingsList = rankingsList.Take(10).ToList();
 
 
-        // Update highscore check with values from list
-        if (highscore < rankingsList[0].points) {
-            highscore = rankingsList[0].points;
-        }
-
         // Override rankings file with new data
         RankingList updatedRankingList = new()
         {
@@ -378,10 +389,7 @@ public class GameManager : MonoBehaviour {
         string updatedRankingsJsonData = JsonUtility.ToJson(updatedRankingList);
         File.WriteAllText("playerRankings.json", updatedRankingsJsonData);
 
-        if (highscore < events.CurrentFinalScore)
-        {
-            PlayerPrefs.SetInt(GameUtility.SavePrefKey, events.CurrentFinalScore);
-        }
+        PlayerPrefs.SetInt(GameUtility.SavePrefKey, rankingsList[0].points);
     }
     /// <summary>
     /// Function that is called update the score and update the UI.

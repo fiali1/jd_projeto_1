@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Qual \xE9 o tempo de decomposi\xE7\xE3o na natureza de uma lata de alum\xEDnio?"
   _answers:
-  - _info: entre 100 a 200 anos
+  - _info: Entre 100 a 200 anos
     _isCorrect: 0
-  - _info: entre 1000 a 1500 anos
+  - _info: Entre 1000 a 1500 anos
     _isCorrect: 0
-  - _info: entre 250 a 500 anos
+  - _info: Entre 250 a 500 anos
     _isCorrect: 1
-  - _info: entre 50 a 100 anos
+  - _info: Entre 50 a 100 anos
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

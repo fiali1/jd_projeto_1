@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Qual destes pl\xE1sticos \xE9 recicl\xE1vel?"
   _answers:
-  - _info: recipientes de produtos de higiene
+  - _info: Recipientes de produtos de higiene
     _isCorrect: 1
-  - _info: teclado de computador
+  - _info: Teclado de computador
     _isCorrect: 0
-  - _info: "acr\xEDlico"
+  - _info: "Acr\xEDlico"
     _isCorrect: 0
-  - _info: 'cabo de panela'
+  - _info: Cabo de panela
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

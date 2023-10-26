@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Quais destes tipos de metal n\xE3o \xE9 recicl\xE1vel?"
   _answers:
-  - _info: "latas de a\xE7o"
+  - _info: "Latas de a\xE7o"
     _isCorrect: 0
-  - _info: "latas de alum\xEDnio"
+  - _info: "Latas de alum\xEDnio"
     _isCorrect: 0
-  - _info: latas de tinta
+  - _info: Latas de tinta
     _isCorrect: 1
-  - _info: ferragens
+  - _info: Ferragens
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

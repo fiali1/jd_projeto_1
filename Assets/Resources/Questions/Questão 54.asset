@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Qual dos tipos de material abaixo pode ser descartado no lixo comum?
   _answers:
-  - _info: pilhas alcalinas
+  - _info: Pilhas alcalinas
     _isCorrect: 1
-  - _info: baterias
+  - _info: Baterias
     _isCorrect: 0
-  - _info: pilhas comuns
+  - _info: Pilhas comuns
     _isCorrect: 0
-  - _info: "placa-m\xE3e"
+  - _info: "Placa-m\xE3e"
     _isCorrect: 0
   _useTimer: 1
   _timer: 30

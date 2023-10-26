@@ -16,11 +16,11 @@ MonoBehaviour:
   _answers:
   - _info: "Pol\xEDtica de cr\xE9dito de carbono"
     _isCorrect: 0
-  - _info: economia de ambiente limpo
+  - _info: Economia de ambiente limpo
     _isCorrect: 0
-  - _info: sustentabilidade empresarial
+  - _info: Sustentabilidade empresarial
     _isCorrect: 1
-  - _info: "energia limpa e n\xE3o renov\xE1vel"
+  - _info: "Energia limpa e n\xE3o renov\xE1vel"
     _isCorrect: 0
   _useTimer: 1
   _timer: 30
