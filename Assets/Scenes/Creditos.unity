@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1011,7 +1011,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "UFABC\n\nProf\xBA Mario Minami\n\nProgramadores:\n \nFrancisco Sim\xE3o\nGabriel
     Fiali\nHenrique Oliveira\nVinicius Lacerda\nWesley Axel\n\nJogos Digitais - 2023\n\n\nFonte
-    utilizada: Mikado\n\nReferencias: \nhttp\n\nImagens: https://www.canva.com/pt_br/"
+    utilizada: Mikado\n\nReferencias: https://github.com/WatchFindDo/QuizGameProject\n\nImagens:
+    https://www.canva.com/pt_br/"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1038,8 +1039,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1196,7 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804596840b2fb28448d97850640638c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 14
+  scrollSpeed: 1
   limiteLoopingY: 2500
 --- !u!1 &1527702688
 GameObject:

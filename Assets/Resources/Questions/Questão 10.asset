@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: "Quest\xE3o 10"
   m_EditorClassIdentifier: 
-  _info: Com que tipo de lixo podemos realizar a compostagem?
+  _info: "Com qual dos seguintes problemas ambientais est\xE1 relacionado o processo
+    de eutrofiza\xE7\xE3o?"
   _answers:
-  - _info: lixo espacial
+  - _info: Aquecimento global
     _isCorrect: 0
-  - _info: lixo hospitalar
+  - _info: Desmatamento
     _isCorrect: 0
-  - _info: "pl\xE1stico"
+  - _info: "Polui\xE7\xE3o do ar"
     _isCorrect: 0
-  - _info: "lixo org\xE2nico"
+  - _info: "Polui\xE7\xE3o da \xE1gua"
     _isCorrect: 1
   _useTimer: 1
   _timer: 30
